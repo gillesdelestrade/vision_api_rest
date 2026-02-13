@@ -812,6 +812,7 @@
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/BoiteArchiveResource.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/ProchaineEtapeDemandeDTO.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/CourrielDTO.java
+/Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/PvagInfoDTO.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/LigneFacturationMapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/repositories/ChequeRepository.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/EtiquetteMapper.java

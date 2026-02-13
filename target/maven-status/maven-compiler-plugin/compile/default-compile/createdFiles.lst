@@ -15,6 +15,7 @@ fr/d4immobilier/visionapirest/mappers/AutorisationValidationFacturesMapper.class
 fr/d4immobilier/visionapirest/mappers/MatriculeICSMapper.class
 fr/d4immobilier/visionapirest/mappers/CourrierFactureMapper.class
 fr/d4immobilier/visionapirest/dto/CourrierEntrantDTO.class
+fr/d4immobilier/visionapirest/dto/PvagInfoDTO.class
 fr/d4immobilier/visionapirest/security/Role.class
 fr/d4immobilier/visionapirest/repositories/FichierBonDeLivraisonRepository.class
 fr/d4immobilier/visionapirest/repositories/BordereauRepository.class

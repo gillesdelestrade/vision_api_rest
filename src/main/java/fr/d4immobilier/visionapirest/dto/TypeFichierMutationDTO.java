@@ -9,5 +9,6 @@ import java.util.List;
 public record TypeFichierMutationDTO(
     String type,
     String libelle,
-    List<FichierMutationInfoDTO> fichiers
+    List<FichierMutationInfoDTO> fichiers,
+    List<PvagInfoDTO> pvags
 ) {}

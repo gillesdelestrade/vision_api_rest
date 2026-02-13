@@ -49,7 +49,7 @@ public List<AssembleeResumeDTO> findByCoproprieteId(Long coproprieteId) {
         
         AssembleeResumeDTO dto = new AssembleeResumeDTO();
         dto.setId(id);
-        dto.setDateAssemblee(((Instant) row[1]).atZone(ZoneId.systemDefault()).toLocalDate());
+        dto.setDateAssemblee(row[1] != null ? ((Instant) row[1]).atZone(ZoneId.systemDefault()).toLocalDate() : null);
         dto.setDateProvisoire((Boolean) row[2]);
         
         Boolean extraordinaire = (Boolean) row[3];
