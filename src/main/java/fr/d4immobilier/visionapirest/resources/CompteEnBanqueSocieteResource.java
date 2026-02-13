@@ -1,0 +1,35 @@
+package fr.d4immobilier.visionapirest.resources;
+
+import fr.d4immobilier.visionapirest.dto.CompteEnBanqueSocieteDTO;
+import fr.d4immobilier.visionapirest.entities.CompteEnBanqueSociete;
+import fr.d4immobilier.visionapirest.mappers.CompteEnBanqueSocieteMapper;
+import fr.d4immobilier.visionapirest.mappers.GenericMapper;
+import fr.d4immobilier.visionapirest.repositories.CompteEnBanqueSocieteRepository;
+import fr.d4immobilier.visionapirest.repositories.GenericRepository;
+import jakarta.inject.Inject;
+import jakarta.ws.rs.*;
+import jakarta.ws.rs.core.MediaType;
+
+@Path("/compteenbanquesocietes")
+@Produces(MediaType.APPLICATION_JSON)
+@Consumes(MediaType.APPLICATION_JSON)
+public class CompteEnBanqueSocieteResource extends GenericResource<CompteEnBanqueSociete, CompteEnBanqueSocieteDTO, Long> {
+    
+    @Inject
+    private CompteEnBanqueSocieteRepository repository;
+    
+    @Inject
+    private CompteEnBanqueSocieteMapper mapper;
+    
+    @Override
+    protected GenericRepository<CompteEnBanqueSociete, Long> getRepository() {
+        return repository;
+    }
+    
+    @Override
+    protected GenericMapper<CompteEnBanqueSociete, CompteEnBanqueSocieteDTO> getMapper() {
+        return mapper;
+    }
+    
+    // Ajoutez ici des endpoints spécifiques si nécessaire
+}
