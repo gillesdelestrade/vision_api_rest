@@ -22,9 +22,14 @@ public class JwtAuthFilter implements ContainerRequestFilter {
     @Inject
     private JwtService jwtService;
     
+    @Inject
+    private AuthenticatedUser authenticatedUser;
+    
     @Override
     public void filter(ContainerRequestContext requestContext) throws IOException {
+        System.out.println("=== JwtAuthFilter déclenché ===");
         String authHeader = requestContext.getHeaderString(HttpHeaders.AUTHORIZATION);
+        System.out.println("=== Auth header: " + authHeader + " ===");
         String token = jwtService.extractTokenFromHeader(authHeader);
         
         if (token == null || !jwtService.validateToken(token)) {
@@ -37,7 +42,10 @@ public class JwtAuthFilter implements ContainerRequestFilter {
         }
         
         // Récupérer l'utilisateur et le stocker dans le contexte
-        UserPrincipal user = jwtService.getUserFromToken(token);
-        requestContext.setProperty("user", user);
+        
+        UserPrincipal user = jwtService.getUserFromToken(token);        
+        System.out.println("=== User extrait: " + user.getUserId() + " ===");
+        authenticatedUser.setUser(user);
+        System.out.println("=== AuthenticatedUser set, hash: " + System.identityHashCode(authenticatedUser) + " ===");
     }
 }
