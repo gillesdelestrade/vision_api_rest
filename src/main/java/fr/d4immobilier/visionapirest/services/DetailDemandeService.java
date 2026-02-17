@@ -18,6 +18,7 @@ public class DetailDemandeService {
     private EntityManager em;
 
     private static final DateTimeFormatter FMT_DATE = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    private static final DateTimeFormatter FMT_DATE_HEURE = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
     private static final String[] COULEURS_KANBAN = {"#0000FF", "#00FF00", "#FFFF00", "#FF0000"};
     private static final String[] URGENCES = {"DANS_LES_10_JOURS", "URGENT"};
     private static final String[] IMPORTANCES = {"MINEUR", "SERIEUX", "IMPORTANT", "CRITIQUE"};
@@ -622,11 +623,11 @@ public class DetailDemandeService {
         if (val == null) return null;
         try {
             if (val instanceof Instant) {
-                return ((Instant) val).atZone(ZoneId.systemDefault()).format(FMT_DATE);
+                return ((Instant) val).atZone(ZoneId.systemDefault()).format(FMT_DATE_HEURE);
             } else if (val instanceof java.sql.Timestamp) {
-                return ((java.sql.Timestamp) val).toInstant().atZone(ZoneId.systemDefault()).format(FMT_DATE);
+                return ((java.sql.Timestamp) val).toInstant().atZone(ZoneId.systemDefault()).format(FMT_DATE_HEURE);
             } else if (val instanceof java.sql.Date) {
-                return ((java.sql.Date) val).toLocalDate().format(FMT_DATE);
+                return ((java.sql.Date) val).toLocalDate().format(FMT_DATE_HEURE);
             } else if (val instanceof LocalDate) {
                 return ((LocalDate) val).format(FMT_DATE);
             }
@@ -642,9 +643,9 @@ public class DetailDemandeService {
             if (val instanceof LocalDate) {
                 return ((LocalDate) val).format(FMT_DATE);
             } else if (val instanceof java.sql.Date) {
-                return ((java.sql.Date) val).toLocalDate().format(FMT_DATE);
+                return ((java.sql.Date) val).toLocalDate().format(FMT_DATE_HEURE);
             } else if (val instanceof Instant) {
-                return ((Instant) val).atZone(ZoneId.systemDefault()).format(FMT_DATE);
+                return ((Instant) val).atZone(ZoneId.systemDefault()).format(FMT_DATE_HEURE);
             }
         } catch (Exception e) {
             // fallback
