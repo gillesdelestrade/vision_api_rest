@@ -53,6 +53,7 @@ fr/d4immobilier/visionapirest/resources/FonctionAPIFournisseurResource.class
 fr/d4immobilier/visionapirest/entities/ReunionV2.class
 fr/d4immobilier/visionapirest/mappers/EmplacementStockMapper.class
 fr/d4immobilier/visionapirest/repositories/RegroupementLignesFacturationRepository.class
+fr/d4immobilier/visionapirest/resources/EquipeCoproprieteResource.class
 fr/d4immobilier/visionapirest/mappers/TexteATrouAttenduCSMapper.class
 fr/d4immobilier/visionapirest/resources/PrixCatalogueCoproprieteResource.class
 fr/d4immobilier/visionapirest/resources/PanierCommandeMoyenAccesResource.class
@@ -135,6 +136,7 @@ fr/d4immobilier/visionapirest/mappers/AudienceMapper.class
 fr/d4immobilier/visionapirest/mappers/ContratFournisseurMapperImpl.class
 fr/d4immobilier/visionapirest/resources/PrestationAssureeParUnCoproprietaireResource.class
 fr/d4immobilier/visionapirest/mappers/LogActiviteMapperImpl.class
+fr/d4immobilier/visionapirest/services/CoproprietaireService.class
 fr/d4immobilier/visionapirest/mappers/MotifDecisionFactureMapperImpl.class
 fr/d4immobilier/visionapirest/entities/Etiquette.class
 fr/d4immobilier/visionapirest/mappers/ActionPVAGMapperImpl.class
@@ -149,6 +151,7 @@ fr/d4immobilier/visionapirest/mappers/BudgetMapper.class
 fr/d4immobilier/visionapirest/entities/PrestationContrat.class
 fr/d4immobilier/visionapirest/mappers/FinancementTravauxMapperImpl.class
 fr/d4immobilier/visionapirest/mappers/LogActiviteMapper.class
+fr/d4immobilier/visionapirest/dto/CoproprietaireByEmailDTO.class
 fr/d4immobilier/visionapirest/entities/TypeOrigineSinistre.class
 fr/d4immobilier/visionapirest/entities/Tantieme.class
 fr/d4immobilier/visionapirest/dto/AssuranceDTO.class
@@ -228,6 +231,7 @@ fr/d4immobilier/visionapirest/mappers/TypeDocumentCourrierEntrantMapper.class
 fr/d4immobilier/visionapirest/entities/Cheque.class
 fr/d4immobilier/visionapirest/dto/ReunionV2DTO.class
 fr/d4immobilier/visionapirest/repositories/ModeleMoyenAccesRepository.class
+fr/d4immobilier/visionapirest/entities/LLMProvider.class
 fr/d4immobilier/visionapirest/resources/FichierContratResource.class
 fr/d4immobilier/visionapirest/dto/auth/IdentiteDTO.class
 fr/d4immobilier/visionapirest/resources/TagEvenementResource.class
@@ -472,6 +476,7 @@ fr/d4immobilier/visionapirest/entities/ActionDemande.class
 fr/d4immobilier/visionapirest/dto/FichierProjetRepartitionDTO.class
 fr/d4immobilier/visionapirest/resources/CompteEnBanqueResource.class
 fr/d4immobilier/visionapirest/mappers/PropositionSondageMapper.class
+fr/d4immobilier/visionapirest/entities/ContextePromptLLM.class
 fr/d4immobilier/visionapirest/entities/ActionPVAG.class
 fr/d4immobilier/visionapirest/entities/Societe.class
 fr/d4immobilier/visionapirest/mappers/PassageObligeMapper.class
@@ -486,6 +491,7 @@ fr/d4immobilier/visionapirest/repositories/CommentaireDevisFournisseurRepository
 fr/d4immobilier/visionapirest/mappers/BatimentMapperImpl.class
 fr/d4immobilier/visionapirest/resources/AutorisationValidationFacturesResource.class
 fr/d4immobilier/visionapirest/repositories/BanqueRepository.class
+fr/d4immobilier/visionapirest/dto/EquipeCoproprieteDTO.class
 fr/d4immobilier/visionapirest/repositories/ComplementProcedureRepository.class
 fr/d4immobilier/visionapirest/resources/MotNiPertinentNiPasPertinentResource.class
 fr/d4immobilier/visionapirest/repositories/TagEvenementRepository.class
@@ -507,6 +513,7 @@ fr/d4immobilier/visionapirest/entities/ExpressionCle.class
 fr/d4immobilier/visionapirest/resources/DevisHonorairesResource.class
 fr/d4immobilier/visionapirest/mappers/FichierDemandeSansCompteVisionMapperImpl.class
 fr/d4immobilier/visionapirest/repositories/DemandeDevisRepository.class
+fr/d4immobilier/visionapirest/dto/CoproprieteCoproprietaireDTO.class
 fr/d4immobilier/visionapirest/dto/HistoriqueNavigationDTO.class
 fr/d4immobilier/visionapirest/resources/NoeudThreadCourrierResource.class
 fr/d4immobilier/visionapirest/entities/TexteATrouAttenduCS.class
@@ -541,6 +548,7 @@ fr/d4immobilier/visionapirest/entities/Audience.class
 fr/d4immobilier/visionapirest/mappers/SymptomeTypeEquipementMapper.class
 fr/d4immobilier/visionapirest/dto/DevisFournisseurDTO.class
 fr/d4immobilier/visionapirest/repositories/ModeleCourrierRepository.class
+fr/d4immobilier/visionapirest/dto/CoproprieteSimpleDTO.class
 fr/d4immobilier/visionapirest/dto/ARappelerCourrierDTO.class
 fr/d4immobilier/visionapirest/dto/PassageObligeDTO.class
 fr/d4immobilier/visionapirest/entities/Tarif.class
@@ -654,6 +662,7 @@ fr/d4immobilier/visionapirest/repositories/EtapeConsigneRepository.class
 fr/d4immobilier/visionapirest/mappers/MotPertinentMapperImpl.class
 fr/d4immobilier/visionapirest/entities/RappelTelephonique.class
 fr/d4immobilier/visionapirest/repositories/ContratFournisseurRepository.class
+fr/d4immobilier/visionapirest/services/EquipeCoproprieteService.class
 fr/d4immobilier/visionapirest/entities/ModeleMoyenAcces.class
 fr/d4immobilier/visionapirest/mappers/CandidatureCSMapper.class
 fr/d4immobilier/visionapirest/mappers/Bordereau_CoproprietaireMapper.class
@@ -718,6 +727,7 @@ fr/d4immobilier/visionapirest/mappers/PanierDemandesInterventionMapper.class
 fr/d4immobilier/visionapirest/dto/EtapeDemandeDTO.class
 fr/d4immobilier/visionapirest/mappers/CoproprietairePersonneMapperImpl.class
 fr/d4immobilier/visionapirest/repositories/PouvoirAGRepository.class
+fr/d4immobilier/visionapirest/dto/MembreEquipeDTO.class
 fr/d4immobilier/visionapirest/repositories/TVARepository.class
 fr/d4immobilier/visionapirest/dto/DevisLieDTO.class
 fr/d4immobilier/visionapirest/dto/FichierDevisFournisseurDTO.class
@@ -876,6 +886,7 @@ fr/d4immobilier/visionapirest/dto/KanbanDTO.class
 fr/d4immobilier/visionapirest/repositories/CourrielRepository.class
 fr/d4immobilier/visionapirest/dto/MoyenAccesCatalogueQuantiteDTO.class
 fr/d4immobilier/visionapirest/dto/LotResumeDTO.class
+fr/d4immobilier/visionapirest/entities/PromptLLM.class
 fr/d4immobilier/visionapirest/security/AuthenticatedUser.class
 fr/d4immobilier/visionapirest/mappers/CoproprietaireCoproprieteMapperImpl.class
 fr/d4immobilier/visionapirest/mappers/OuvrantMapper.class

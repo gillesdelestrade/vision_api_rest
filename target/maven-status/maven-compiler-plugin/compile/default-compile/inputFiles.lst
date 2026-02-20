@@ -196,6 +196,7 @@
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/EtapeDemandeMapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/repositories/DocumentBonDeCommandeRepository.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/EtatBordereauCheques.java
+/Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/CoproprietaireByEmailDTO.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/AttenduCSResource.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/Dossier.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/SuppressionFraisDeRelance.java
@@ -235,12 +236,14 @@
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/CodeBanqueCMC7Resource.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/BonDeCommande.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/EvenementDemandeResource.java
+/Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/services/CoproprietaireService.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/ProfilCompteVision.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/MandatSyndicMapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/ARappelerCourrierMapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/EmplacementPanneauBALInterphoneDTO.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/repositories/DocumentDemandeDevisRepository.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/RegroupementResolutionsMapper.java
+/Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/ContextePromptLLM.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/CompteEnBanqueCoproprieteResource.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/repositories/EtapePlanifAGRepository.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/CodeBanqueCMC7.java
@@ -324,6 +327,7 @@
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/MotCleMetierMapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/repositories/FichierEmplacementRepository.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/TagEvenement.java
+/Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/CoproprieteSimpleDTO.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/ExpressionCle.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/repositories/ARappelerRepository.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/FichierInterventionDemande.java
@@ -351,6 +355,7 @@
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/MotNonPertinentMapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/FinancementTravauxResource.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/ComplementProcedure.java
+/Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/LLMProvider.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/repositories/ProduitCatalogueRepository.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/TagEvenementResource.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/repositories/CommentaireDevisFournisseurRepository.java
@@ -590,6 +595,7 @@
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/NatureFichierSinistreMapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/AffectationEtiquetteDTO.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/repositories/DevisD4Repository.java
+/Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/services/EquipeCoproprieteService.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/AssembleeResource.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/PrestationContratResource.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/BonDeCommandeResource.java
@@ -627,6 +633,7 @@
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/LivraisonMapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/LexiqueAPID4Mapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/MandatSyndicResource.java
+/Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/CoproprieteCoproprietaireDTO.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/DemandeDevisEnCoursDTO.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/AttenduCS.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/ReunionResource.java
@@ -695,6 +702,7 @@
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/repositories/PersonneRepository.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/ChequeResource.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/TypeCompteEnBanque.java
+/Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/MembreEquipeDTO.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/Adresse.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/DocumentBonDeLivraisonMapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/CompteEnBanqueCopropriete.java
@@ -897,6 +905,7 @@
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/AvisFactureCS.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/DesistementChequeMapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/Importance.java
+/Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/PromptLLM.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/PrestationContratsDTO.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/EmplacementPanneauBALInterphoneMapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/MatriculeICSUrlDTO.java
@@ -978,6 +987,7 @@
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/ReunionV2Mapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/MouvementBancaireMapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/HistoriqueModificationEtapePlanifAGDTO.java
+/Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/EquipeCoproprieteResource.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/CompteEnBanqueCoproprieteMapper.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/repositories/DemandeDevisRepository.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/mappers/FactureD4Mapper.java
@@ -1080,6 +1090,7 @@
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/APIFournisseurDTO.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/RibDTO.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/repositories/DocumentBonDeLivraisonRepository.java
+/Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/EquipeCoproprieteDTO.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/dto/auth/SelectIdentiteRequest.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/resources/DemandeDeRappelResource.java
 /Users/gillesdelestrade/NetBeansProjects/visionApiRest/src/main/java/fr/d4immobilier/visionapirest/entities/PanneauBALInterphone.java
